@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from 'react';
-import { filmData } from './film-data.json';
+import filmData from './film-data.json';
 
 function App() {
   return (
@@ -34,15 +34,16 @@ function Gallery() {
 let data = filmData[index];
 return (
     <>
-      <button onClick={handleNextClick}>Next</button>
-      <button onClick={handleBackClick}>Back</button>
-      <button onClick={handleRestartClick}>Restart</button>
-      
       <h3>{data.title}</h3>
       <h3>{data.original_title}</h3>
       <h3>{data.realease_date}</h3>
       <h3>{data.description}</h3>
       <div><img src={data.image} alt='cover' /></div>
+
+      <button onClick={handleBackClick}>Back</button>
+      <button onClick={handleRestartClick}>Restart</button>
+      <button onClick={handleNextClick}>Next</button>
+      
     </>
   )
 }
