@@ -34,15 +34,15 @@ function Gallery() {
 let data = filmData[index];
 return (
     <>
-      <h3>{data.title}</h3>
-      <h3>{data.original_title}</h3>
-      <h3>{data.realease_date}</h3>
-      <h3>{data.description}</h3>
-      <div><img src={data.image} alt='cover' /></div>
+      <h2 className='title'>{data.title}</h2>
+      <h3 className='og-title'>{data.original_title}</h3>
+      <h4 className='release-date'>{data.realease_date}</h4>
+      <h3 className='description'>{data.description}</h3>
+      <div className='image'><img src={data.image} alt='cover' /></div>
 
-      <button onClick={handleBackClick}>Back</button>
-      <button onClick={handleRestartClick}>Restart</button>
-      <button onClick={handleNextClick}>Next</button>
+      <button onClick={handleBackClick} disabled={index === 0}>Back</button>
+      <button onClick={handleRestartClick} disabled={index === 0}>Restart</button>
+      <button onClick={handleNextClick} disabled={index === filmData.length - 1}>Next</button>
       
     </>
   )
