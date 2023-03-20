@@ -1,7 +1,64 @@
-.section {
+/* .section {
+  display: inline-grid;
+    gap: 15px;
+    justify-content: center;
+    width: fit-content;
+} */
 
+.section {
+  background: hsla(208, 33%, 21%, 1);
+
+  background: linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#243748", endColorstr="#4B749F", GradientType=1 );
 }
 
 .image {
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.og-title {
+  display:flex;
+  justify-content: center;
+  font-family: Didot, serif;
+  color:antiquewhite;
+}
+
+.title {
+  display:flex;
+  justify-content: center;
+  font-family: Didot, serif;
+  color:antiquewhite;
+}
+
+.description {
+  display:flex;
+  justify-content: center;
+  font-family: Didot, serif;
+  color:antiquewhite;
+}
+
+/* .back-button, .next-button, .restart-button {
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* .image {
+  display: flex;
+  justify-content: flex-start;
+} */
+
+button {
+  border-radius: 20px;
+  font-family: Didot, serif;
+  color: black;
+  gap: 15px;
 }
